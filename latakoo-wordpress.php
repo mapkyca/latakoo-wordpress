@@ -61,8 +61,10 @@ function latakoowp_shortcode($attr, $content)
 
     ob_start();
 ?>
-<object width="<?php echo $attr['width']; ?>" height="<?php echo $attr['height']; ?>" id="_player<?php echo $playerID;?>" name="_player<?php echo $playerID;?>" data="<?php echo $url_base; ?>flowplayer/flowplayer.commercial-3.2.5.swf" type="application/x-shockwave-flash"><param name="movie" value="<?php echo $url_base; ?>flowplayer/flowplayer.commercial-3.2.5.swf" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="flashvars" value='config={"key":"#$dcea44655fdef425c1b", "playlist":[{"url":"<?php echo $url_base; ?>/-/video/<?php echo $id; ?>/thumb.jpg","autoplay":true},{"url":"<?php echo $url_base; ?>/-/video/<?php echo $id; ?>/retrieve","autoPlay":false,"autoBuffering":false}],"clip":{"url":"<?php echo $url_base; ?>-/video/<?php echo $id; ?>/retrieve", "scaling":"fit"}}' /></object>
-
+<iframe id="_player<?php echo $playerID;?>" name="_player<?php echo $playerID;?>" 
+	src="<?php echo $url_base; ?>-/videoembed/<?php echo $id; ?>/" 
+	scrolling="no" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0"
+	width="<?php echo $attr['width']; ?>" height="<?php echo $attr['height']; ?>"></iframe>
 <?php
     return ob_get_clean();
 }
