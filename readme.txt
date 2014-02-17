@@ -1,6 +1,6 @@
 === Latakoo Wordpress Plugin ===
 Contributors: mapkyca
-Tags: headers, opengraph, facebook, meta
+Tags: latakoo, video, meta
 Requires at least: 2.9
 Tested up to: 3.1
 License: GPLv2 or later
