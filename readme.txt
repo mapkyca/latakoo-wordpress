@@ -1,4 +1,4 @@
-=== Open Graph Headers ===
+=== Latakoo Wordpress Plugin ===
 Contributors: mapkyca
 Tags: headers, opengraph, facebook, meta
 Requires at least: 2.9
